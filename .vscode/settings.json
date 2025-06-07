@@ -1,0 +1,14 @@
+{
+    "editor.suggest.showInlineDetails": false,
+    "editor.suggest.matchOnWordStartOnly": false,
+    "launch": {
+        "editor.autoClosingBrackets":false,
+        "editor.suggestOnTriggerCharacters":false
+        
+            // "configurations": [],
+        // "compounds": []
+    },
+    "github.copilot.enable": {
+        "*": false
+    }
+}

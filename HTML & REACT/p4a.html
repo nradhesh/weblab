@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Employee Info</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type = "text/babel">
+        function Employee(){
+            const [name , setName] = React.useState("Alice");
+            const [address , setAddress] = React.useState("Bangalore");
+            const company = "tech";
+
+            const change= ()=>{
+                setName("Bob");
+                setAddress('Mumbai');
+            };
+
+            return(
+                <div>
+                    <h2>Emp info</h2>
+                    <p>name {name}</p>
+                    <p>add {address}</p>
+                    <p>comp {company}</p>
+                    <button onClick = {change}>change</button>
+                </div>
+            )
+
+        }
+        ReactDOM.createRoot(document.getElementById("root")).render(<Employee/>)
+    </script>
+  </body>
+</html>
