@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type = "text/babel">
+    <script type="text/babel">
         function Employee(){
             const [name , setName] = React.useState("Alice");
             const [address , setAddress] = React.useState("Bangalore");
@@ -29,9 +29,8 @@
                     <button onClick = {change}>change</button>
                 </div>
             )
-
         }
-        ReactDOM.createRoot(document.getElementById("root")).render(<Employee/>)
+        ReactDOM.render(<Employee />, document.getElementById("root"));
     </script>
   </body>
 </html>
